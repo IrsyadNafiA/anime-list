@@ -22,7 +22,7 @@ const InputSearch = () => {
     <div className="relative">
       <input
         type="text"
-        className="w-full md:w-fit p-2 rounded-md text-sm md:text-base font-medium border border-black border-color-secondary"
+        className="w-full md:w-fit p-2 rounded-md text-sm md:text-base font-medium border border-color-secondary"
         placeholder="Search here..."
         ref={searchRef}
         onKeyDown={handleSearch}
