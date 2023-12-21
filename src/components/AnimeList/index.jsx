@@ -8,7 +8,10 @@ const AnimeList = ({ api }) => {
       {api.data.map((data) => {
         return (
           <div key={data.mal_id}>
-            <Link href={`/${data.mal_id}`}>
+            <Link
+              href={`/${data.mal_id}`}
+              className="text-white hover:text-color-accent"
+            >
               <div className="w-full h-64">
                 <Image
                   src={data.images.webp.image_url}
@@ -19,7 +22,7 @@ const AnimeList = ({ api }) => {
                   priority
                 />
               </div>
-              <h3 className="font-semibold p-4 text-md md:text-lg">
+              <h3 className="font-semibold p-4 text-md md:text-lg ">
                 {data.title}
               </h3>
             </Link>
